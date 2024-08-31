@@ -2,6 +2,8 @@
 
 # Problem Set 1: mario-less
 
+![Image of Mario (https://pngimg.com/uploads/mario/small/mario_PNG38.png)]
+
 ## Understanding the Criteria
 In a file called mario.c in a folder called mario-less, implement a program in C that recreates that pyramid, using hashes (#) for bricks, as in the below:
 ```
@@ -93,6 +95,7 @@ We can also deduce a pattern such that each row has the number of hashes corresp
     }
 ```
 ***In row 1, the loop runs from j = 0 to j < 2 (i.e. j = 0, 1), printing 2 dots.***
+
 ***In row 3, the loop runs from j = 0 to j < 3 (i.e. j = 0, 1, 2), printing 3 hashes.***
 
 > [!CAUTION]
