@@ -28,7 +28,7 @@ Re-prompt the user, again and again as needed, if their input is not greater tha
 #include <stdio.h>
 ```
 ## Establishing the Conditions 
-For our height, we only want to accept values of up to 8 and no less than 1.
+We want our height to be a positive integer between 1 and 8, inclusive. 
 This can be achieved by utilising the do-while loop. 
 ```
     int height;
@@ -38,8 +38,11 @@ This can be achieved by utilising the do-while loop.
     }
     while (height <= 0 || height > 8);
 ```
-
-
+Let the row number be _i_. 
+```
+    for (int i = 1; i <= height; i++)
+```
+Such that there will be _i_ number of rows starting from row 1 until _i_ is equal to the value of the height. 
 
 ## Examining the Pattern 
 There are many ways you can interpret the output required from your code. Consider the following: 
@@ -67,8 +70,7 @@ In row 1, there are 2 dots and 1 hash.
 In row 2, there are 1 dot and 2 hashes.
 In row 3, there are 0 dots and 3 hashes. 
 
-We can deduce a pattern such that each row has a number of dots corresponding to the total height - the row the dots are in. 
-
+We can deduce a pattern such that each row has a number of dots corresponding to the total height - the row the dots are in, _i_.
 
 ```
     for (int i = 1; i <= height; i++)
@@ -86,8 +88,14 @@ We can deduce a pattern such that each row has a number of dots corresponding to
         printf("\n");
     }
 ```
+> [!NOTE]
+> In row 1, there are 
+> 
 > [!CAUTION]
-> We are printing an empty space instead of "·". The dot is there simply as a visualisation tool. 
+> We are printing an empty space instead of "·". The dot is there simply as a visualisation tool.
+>
+> > [!IMPORTANT]
+> Key information users need to know to achieve their goal.
 
 ## Final Results
 ```
