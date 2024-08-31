@@ -97,7 +97,12 @@ We can also deduce a pattern such that each row has the number of hashes corresp
 > We are printing an empty space instead of "·". The dot is there simply as a visualisation tool.
 
 > [!IMPORTANT]
-> Key information users need to know to achieve their goal.
+> We must end off our code with printf(“\n”) to move to the next line after printing each row of the pyramid.
+> Otherwise, our output would end up like this:
+> ```
+>  # #####
+>  ```
+
 
 ## Final Results
 ```
