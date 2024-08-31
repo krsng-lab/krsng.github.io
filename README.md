@@ -1,4 +1,4 @@
-# krsng.github.io
+       # krsng.github.io
 
 # Problem Set 1: mario-less
 
@@ -86,8 +86,8 @@ We can deduce a pattern such that each row has a number of dots corresponding to
         printf("\n");
     }
 ```
-> [!NOTE]
-> We are printing an empty space instead of "·". 
+> [!CAUTION]
+> We are printing an empty space instead of "·". The dot is there simply as a visualisation tool. 
 
 ## Final Results
 ```
