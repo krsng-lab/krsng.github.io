@@ -60,7 +60,8 @@ To better visualise this pattern, regard the empty spaces to the right as dots.
         printf("\n");
     }
 ```
-
+> [!NOTE]
+> We are printing an empty space instead of "·". 
 
 
 
