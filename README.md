@@ -28,6 +28,17 @@ Re-prompt the user, again and again as needed, if their input is not greater tha
 #include <stdio.h>
 ```
 ## Establishing the Conditions 
+For our height, we only want to accept values of up to 8 and no less than 1.
+This can be achieved by utilising the do-while loop. 
+```
+    int height;
+    do
+    {
+        height = get_int("Height: ");
+    }
+    while (height <= 0 || height > 8);
+```
+
 
 
 ## Examining the Pattern 
@@ -43,6 +54,21 @@ There are many ways you can interpret the output required from your code. Consid
 ########
 ```
 To better visualise this pattern, regard the empty spaces to the right as dots.
+
+## Deducing the Pattern
+
+Suppose you input a height of 3. 
+```
+··#
+·##
+###
+```
+In row 1, there are 2 dots and 1 hash.
+In row 2, there are 1 dot and 2 hashes.
+In row 3, there are 0 dots and 3 hashes. 
+
+We can deduce a pattern such that each row has a number of dots corresponding to the total height - the row the dots are in. 
+
 
 ```
     for (int i = 1; i <= height; i++)
@@ -62,6 +88,9 @@ To better visualise this pattern, regard the empty spaces to the right as dots.
 ```
 > [!NOTE]
 > We are printing an empty space instead of "·". 
+
+
+
 
 
 
