@@ -2,7 +2,7 @@
 
 # Problem Set 1: mario-less
 
-![Image of Mario] (https://pngimg.com/uploads/mario/small/mario_PNG38.png)
+![mario_PNG38](https://github.com/user-attachments/assets/b0ea6a64-290b-45fd-af6c-3460921f79f7)
 
 ## Understanding the Criteria
 In a file called mario.c in a folder called mario-less, implement a program in C that recreates that pyramid, using hashes (#) for bricks, as in the below:
