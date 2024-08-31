@@ -89,7 +89,37 @@ We can deduce a pattern such that each row has a number of dots corresponding to
 > [!NOTE]
 > We are printing an empty space instead of "·". 
 
+## Final Results
+```
+#include <cs50.h>
+#include <stdio.h>
+int main(void)
+{
+    // Prompt the user for the pyramid's height
+    int height;
+    do
+    {
+        height = get_int("Height: ");
+    }
+    while (height <= 0 || height > 8);
 
+    // Print a pyramid of that height
+    for (int i = 1; i <= height; i++)
+    {
+        for (int j = 0; j < height - i; j++)
+        {
+            // Print the empty spaces
+            printf(" ");
+        }
+        // Print the hashes
+        for (int j = 0; j < i; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
+```
 
 
 
