@@ -89,12 +89,12 @@ We can deduce a pattern such that each row has a number of dots corresponding to
     }
 ```
 > [!NOTE]
-> In row 1, there are 
-> 
+> In row 1, there are
+
 > [!CAUTION]
 > We are printing an empty space instead of "·". The dot is there simply as a visualisation tool.
->
-> > [!IMPORTANT]
+
+> [!IMPORTANT]
 > Key information users need to know to achieve their goal.
 
 ## Final Results
