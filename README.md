@@ -42,7 +42,7 @@ Let the row number be _i_.
 ```
     for (int i = 1; i <= height; i++)
 ```
-Such that there will be _i_ number of rows starting from row 1 until _i_ is equal to the value of the height. 
+Such that there will be various rows starting from row 1 until the row number _i_ is equal to the value of the height. 
 
 ## Examining the Pattern 
 There are many ways you can interpret the output required from your code. Consider the following: 
@@ -72,9 +72,9 @@ In row 2, there are 1 dot and 2 hashes.
 
 In row 3, there are 0 dots and 3 hashes. 
 
-We can deduce a pattern such that each row has the number of dots corresponding to less than the total height - the row the dots are in, _i_.
+We can deduce a pattern such that each row has the number of dots corresponding to less than the total height - the row number, _i_.
 
-We can also deduce a pattern such that each row has the number of hashes corresponding to less than the row the dots are in. 
+We can also deduce a pattern such that each row has the number of hashes corresponding to the row number. 
 
 ```
     for (int i = 1; i <= height; i++)
@@ -92,13 +92,15 @@ We can also deduce a pattern such that each row has the number of hashes corresp
         printf("\n");
     }
 ```
+***In row 1, the loop runs from j = 0 to j < 2 (i.e. j = 0, 1), printing 2 dots.***
+***In row 3, the loop runs from j = 0 to j < 3 (i.e. j = 0, 1, 2), printing 3 hashes.***
 
 > [!CAUTION]
 > We are printing an empty space instead of "·". The dot is there simply as a visualisation tool.
 
 > [!IMPORTANT]
 > We must end off our code with printf(“\n”) to move to the next line after printing each row of the pyramid.
-> Otherwise, our output would end up like this:
+> Otherwise, this would be our output:
 > ```
 >  # #####
 >  ```
