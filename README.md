@@ -67,10 +67,14 @@ Suppose you input a height of 3.
 ###
 ```
 In row 1, there are 2 dots and 1 hash.
+
 In row 2, there are 1 dot and 2 hashes.
+
 In row 3, there are 0 dots and 3 hashes. 
 
-We can deduce a pattern such that each row has a number of dots corresponding to the total height - the row the dots are in, _i_.
+We can deduce a pattern such that each row has the number of dots corresponding to less than the total height - the row the dots are in, _i_.
+
+We can also deduce a pattern such that each row has the number of hashes corresponding to less than the row the dots are in. 
 
 ```
     for (int i = 1; i <= height; i++)
@@ -88,8 +92,6 @@ We can deduce a pattern such that each row has a number of dots corresponding to
         printf("\n");
     }
 ```
-> [!NOTE]
-> In row 1, there are
 
 > [!CAUTION]
 > We are printing an empty space instead of "·". The dot is there simply as a visualisation tool.
