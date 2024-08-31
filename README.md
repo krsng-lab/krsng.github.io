@@ -74,7 +74,7 @@ In row 2, there are 1 dot and 2 hashes.
 
 In row 3, there are 0 dots and 3 hashes. 
 
-We can deduce a pattern such that each row has the number of dots corresponding to less than the total height - the row number, _i_.
+We can deduce a pattern such that each row has the number of dots corresponding to the total height - the row number, _i_.
 
 We can also deduce a pattern such that each row has the number of hashes corresponding to the row number. 
 
