@@ -140,7 +140,28 @@ int main(void)
     }
 }
 ```
+# Problem Set 1: mario-less
 
+## Understanding the Criteria
+
+
+
+## First, let's start with including our libraries.
+```
+#include <cs50.h>
+#include <stdio.h>
+```
+
+
+This can be achieved by utilising the do-while loop. 
+```
+    int cents;
+    do
+    {
+        cents = get_int("Change owed: ");
+    }
+    while (cents < 0);
+```
 
 
 
