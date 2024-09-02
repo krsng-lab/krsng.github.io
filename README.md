@@ -162,7 +162,8 @@ Re-prompt the user, again and again as needed, if their input is not greater tha
 #include <cs50.h>
 #include <stdio.h>
 ```
-
+## Establishing the Conditions 
+The change owed must be a value greater than or equal to 0. 
 
 This can be achieved by utilising the do-while loop. 
 ```
@@ -173,6 +174,9 @@ This can be achieved by utilising the do-while loop.
     }
     while (cents < 0);
 ```
+## Deducing the Pattern
+
+
 
 
 
